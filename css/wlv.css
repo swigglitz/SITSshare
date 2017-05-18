@@ -1,0 +1,355 @@
+/* Wolverhampton Overrides File Version 1.0 */
+
+/* Fix Tables /*
+
+table.dataTable thead {
+    color: #ffffff;
+}
+table.dataTable thead .sorting_asc {
+    background-image: none;
+}
+table.dataTable thead .sorting {
+    background-image: none;
+}
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
+
+/* Fix Tables /*
+
+/* Fix Printing */
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+/* Fix Printing */
+
+/* Links decoration */
+
+a {
+	color: #1a0dab;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus, a:active {
+    color: #000000;
+}
+
+.sv-list-group > a {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.sv-nav > li > a {
+	text-decoration: none;
+	font-weight: normal;
+}
+.sv-dropdown-submenu > a:after {
+    border-left-color: #000000;
+}
+.sv-dropdown-submenu:hover > a:after {
+    border-left-color: #000000;
+}
+/* Links decoration */
+
+
+/* Navbar colour updates */
+
+.sv-navbar-default .sv-navbar-nav > .sv-active > a, .sv-navbar-default .sv-navbar-nav > .sv-active > a:hover, .sv-navbar-default .sv-navbar-nav > .sv-active > a:focus {
+    background-color: #596782;
+}
+
+.sv-navbar-default .sv-navbar-nav > .sv-open > a, .sv-navbar-default .sv-navbar-nav > .sv-open > a:hover, .sv-navbar-default .sv-navbar-nav > .sv-open > a:focus {
+    background-color: #404e69;
+}
+
+.sv-navbar-default .sv-navbar-nav > li > a:hover, .sv-navbar-default .sv-navbar-nav > li > a:focus {
+	background-color: #404e69;
+}
+
+/* Navbar colour updates */
+
+/****** Adding Background Swirls ******/
+.sv-navbar-default {
+    background-color: #142e4c;
+    border-color: #000f26;
+    //background-image: url('https://smsweb.wlv.ac.uk/si/sits.urd/css/pageBgf.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/****** Background Swirls End ******/
+
+/****** Changing Header Images ******/
+
+@media (min-width: 768px){
+  .sv-header-image {
+    height: 70px;
+    width: 90px;
+    background: url("../w_files/icons/wlv-logo-small.png") center center no-repeat;
+  }
+}
+
+@media (min-width: 992px){
+  .sv-header-image {
+    height: 70px;
+    width: 90px;
+    background: url("../w_files/icons/wlv-logo-small.png") center center no-repeat;
+  }
+}
+
+@media (min-width: 1235px){
+  .sv-header-image {
+    height: 70px;
+    width: 90px;
+    background: url("../w_files/icons/wlv-logo-small.png") center center no-repeat;
+  }  
+}
+
+@media (min-width: 1496px){
+  .sv-header-image {
+    height: 70px;
+    width: 340px;
+    background: url("../w_files/icons/wlv-logo.png") center center no-repeat;
+  }  
+}
+
+
+
+/****** Changing Header Images ******/
+
+
+/****** Additional tile styles ******/
+
+.sv-tiled-cop-primary {
+  background-color: #001d47;
+}
+.sv-tiled-cop-primary:hover{
+ background-color: #1a3761;
+}
+.sv-tiled-cop-secondary {
+  background-color: #1967b2;
+}
+.sv-tiled-cop-newgrey {
+  background-color: #596782;
+}
+.sv-tiled-cop-newgrey:hover {
+  background-color: #73819c;
+}
+.sv-tiled-cop-newblue {
+  background-color: #142e4c;
+}
+.sv-tiled-cop-newblue:hover {
+  background-color: #2e4866;
+}
+.sv-tiled-cop-newgreen {
+  background-color: #54baa1;
+}
+.sv-tiled-cop-newgreen:hover {
+  background-color: #6ed4bb;
+}
+.sv-tiled-cop-secondary:hover {
+  background-color: #3381cc;
+}
+.sv-tiled-cop-tertiary {
+  background-color: #17c1f4;
+}
+.sv-tiled-cop-tertiary:hover {
+  background-color: #31dbff;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-primary {
+  background-color: #1a3761;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-secondary {
+  background-color: #3381cc;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-tertiary {
+  background-color: #31dbff;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-newblue {
+  background-color: #2e4866;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-newgreen {
+  background-color: #6ed4bb;
+}
+.sv-tiled-col a:focus > .sv-tiled-cop-newgrey {
+  background-color: #73819c;
+}
+
+/****** Additional tile styles END ******/
+/****** Adding Jumbotron START ******/
+
+.sv-jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #001d47;
+}
+.sv-jumbotron h1,
+.sv-jumbotron .h1 {
+  color: #ffffff;
+}
+.sv-jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.sv-jumbotron > hr {
+  border-top-color: #1a3761;
+}
+.sv-container .sv-jumbotron,
+.sv-container-fluid .sv-jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.sv-jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .sv-jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .sv-container .sv-jumbotron,
+  .sv-container-fluid .sv-jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .sv-jumbotron h1,
+  .sv-jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/****** Adding Jumbotron START ******/
+
+
+
+/****** Footer Styles Start ******/
+
+footer {
+    background:#142e4c;
+    margin-top:40px;
+}
+
+footer .footer-heading {
+    font-size:1em;
+    font-weight:400;
+    font-family: 'Roboto Slab', serif;
+    color:#16c1f3;
+    padding:0px;
+    margin:30px 0px 0px 10px;
+	display:block;
+    text-transform: uppercase;
+}
+
+footer ul {
+    float:left;
+    padding:0px;
+    list-style-type:none;
+    margin:20px 20px 0px 10px;
+    line-height:18px;
+}
+
+footer ul.stay-connected {
+    position:relative;
+}
+
+footer ul li {
+    color:#fff;
+    margin-bottom:10px;
+}
+
+footer ul.stay-connected li {
+    position:relative;
+    margin-bottom:15px;
+}
+
+footer ul.stay-connected li a {
+    display:block;
+    margin-left:35px;
+}
+
+
+footer ul.stay-connected li span a {
+    margin-left:0px;
+}
+
+footer ul li span {
+    position:absolute;
+    top:-4px;
+}
+
+footer a {
+    color:#fff;
+     transition: all ease-in-out 0.2s;
+}
+
+footer a:hover, footer a:focus {
+    color:#feea16;
+    transition: all ease-in-out 0.2s;
+	text-decoration: none;
+}
+
+footer .logos {
+    clear:both;
+    float:right;
+    margin-bottom:20px;
+}
+
+footer .logos img {
+    float:left;
+    display:block;
+    margin-right:50px;
+    margin-top:20px;
+}
+
+footer .footer-bottom {
+    background: #596782;
+    height:50px;
+    width:100%;
+    color:#fff;
+    font-size:0.8em;
+}
+
+
+
+footer .footer-bottom .bottom-left {
+    float:left;
+    margin-top:19px;
+    margin-left:5px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 750px) {
+    footer .footer-bottom .bottom-left {
+    margin-left: 60px;
+    }
+}
+
+footer .footer-bottom .bottom-right {
+    float:right;
+    margin-top:19px;
+    margin-right:5px;
+}
+
+.footer-bottom svg{
+    height: 50px;
+    position: absolute;
+}
+
+footer .fa{
+    font-size: 2em;
+}
+
+/****** Footer Styles Start ******/
