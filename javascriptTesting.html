@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Test Page</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/sits.css">-->
+        <link rel="stylesheet" type="text/css" href="css/sv.css">
+        <link rel="stylesheet" type="text/css" href="css/wlv.css">
+        <link rel="stylesheet" type="text/css" href="plugins/css/ui/sits-ui.css">
+
+        <script src="javascript/settings.js"></script>
+        <script src="javascript/sits_ajax.js"></script>
+        <script src="javascript/wlv.js"></script>
+        <script src="plugins/javascript/jquery.js"></script>
+        <script src="plugins/javascript/jquery-ui.js"></script>        
+        <script src="plugins/javascript/sv.js"></script>
+        <script src="plugins/javascript/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="plugins/javascript/datatables/media/js/dataTables.tribal.js"></script>
+        <script src="plugins/javascript/tablesaw/tablesaw.js"></script>
+    </head>
+
+    <body>
+        <div class="sv-page-content sv-container-fluid">
+            <h1>Javascript Tests</h1>
+            <hr>
+            <div class="sv-container">
+                <div class="sv-row">
+                    <form>
+                        <div class="sv-form-container">
+                            <div class="sv-form-container-horizontal">
+                                <h2>Email Validation</h2>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-3">Email Address</label>
+                                    <div class="sv-col-md-4">
+                                        <input class="sv-form-control" type="text" placeholder="Enter an email address" id="email">
+                                    </div>
+                                    <span id="errorMsg"></span>
+                                </div>
+                                <div class="sv-form-group">
+                                    <div class="sv-col-md-2 sv-col-md-offset 3">
+                                        <input type="button" class="sv-btn sv-btn-primary sv-btn-block" value="Validate" id="emailValidate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function validate(){
+            var errorMsg = "";
+            if(checkEmailAddress($("#email").val()))
+            {
+                $("email").css("background-color:green;");
+                errorMsg = "Email Valid"
+            }
+        }
+        $("#emailValidate").bind("click", validate);
+    </script>
+
+</html>
