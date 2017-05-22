@@ -65,6 +65,8 @@
                         <p>sv-col-xs-4</p><p>sv-col-sm-1</p>
                     </div>
                 </div>
+                <hr>
+
                 <h2>Panels</h2>
                 <div class="sv-row">
                     <div class="sv-col-md-6">
@@ -109,7 +111,9 @@
                             </div>
                         </div>
                     </div>                 
-                </div>    
+                </div>
+                <hr>
+
                 <h2>Forms</h2>
                 <div class="sv-row">
                     <div class="sv-col-md-6">
@@ -204,12 +208,45 @@
                             </div>
                         </div>                        
                     </div>
+                </div>
+                <hr>
+                <div class="sv-row" style="min-height: 150px;">
+                    <h2>JavaScript</h2>
+                    <div class="sv-col-xs-8 sv-col-xs-offset-2">
+                        <div class="sv-row">
+                            <div class="sv-col-xs-12">
+                                <select class="sv-form-control" id="control" onchange="hideAlert();">
+                                    <option value="">Please choose...</option>
+                                    <option value="show">Show</option>
+                                    <option value="hide">Hide</option>
+                                </select>
+                                <small>Select from the dropdown to hide and show the alert below.</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="sv-row">
+                            <div class="sv-col-xs-12">
+                                <div class="sv-alert sv-alert-warning" id="alert">
+                                    <p>I can be hidden and shown using the controls above</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sv-col-xs-12">
+                        </div>
+                    </div>
                 </div>                
             </div>
         </div>
     </body>
     
     <script>
-        $()
+        function hideAlert(){
+            var input = $('#control').val();
+            hideContent("#alert", ["hide", "hide"], input);
+        }
+        function showAlert(){
+            var input = $('#control').val();
+            showContent("#alert", ["show", "show"], input);
+        }
     </script>
 </html>

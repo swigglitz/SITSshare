@@ -327,7 +327,7 @@ a:visited {
 }
 
 a:hover {
-    //border-bottom: 1px solid #001d47;
+    /*border-bottom: 1px solid #001d47;*/
     text-decoration: none;
 }
 
@@ -1491,7 +1491,7 @@ html.no-js .list__item {
 }
 
 #sitsnavtab #myTab {
-    margin-top:
+    margin-top: 0px;
 }
 
 #sitsnavtab #myTab > li > a.active {
@@ -2021,7 +2021,7 @@ h1 small {
 
 .links-list>ul {
     list-style-type: none;
-    margin: 0
+    margin: 0;
     padding: 0;
 }
 
@@ -2578,7 +2578,7 @@ margin:0 auto; padding:23px 25px 30px 25px; overflow:hidden; width:700px;}
 }
 
 #sec_doc_upload .name {
-	height:.;
+	height:inherit;
 	
 }
 
@@ -3159,7 +3159,7 @@ table.LIGHTGREY_CURVED_BOTTOM td {padding:0 0 0 15px;}
 .LIGHTGREY_CURVED_BOTTOM a {display:inline-block; font-family:'Open Sans'; font-size:13px !important; line-height:28px; margin:0; padding:5px 0;}
 
 .LIGHTGREY_CURVED_BOTTOM .portallink:hover {background:#EAEAEA;}
-.LIGHTGREY_CURVED_BOTTOM .sitsnewcoptext (display:none;)
+.LIGHTGREY_CURVED_BOTTOM .sitsnewcoptext {display:none;}
 
 .CLEAR_TOP {padding:6px 6px 0 6px;}
 .CLEAR_TOP h3 {font-family:'Open Sans'; font-size:15px !important;}
