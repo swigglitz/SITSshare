@@ -5821,6 +5821,7 @@ input.sv-suggest-box-input-icon.dmu_enabled,
 input.sv-suggest-box-input-icon.dmu_disabled {
   display: inline;
   padding-left: 20px;
+  /*width: 0;*/
   margin-right: 10px;
   background: url("http://www.wlv.ac.uk/media/system-files/style-assets/images/search.png") no-repeat center;
   color: transparent;

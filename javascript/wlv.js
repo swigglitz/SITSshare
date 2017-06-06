@@ -36,9 +36,12 @@ function showContent(areaToShow, valueToShowOn){
     }
 }
 
-function checkEmailAddress(input){
-    var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return pattern.test(email);
+function testEmailAddress(input, control){
+    //console.log("input = " + input + " , control = " + control);
+    $(control).bind("click", function(){
+        //console.log('test');
+        return(checkEmailAddress(input));
+    });
 }
 
 /*
@@ -46,6 +49,12 @@ Below are functions that only work as tools fot the functions above.
 
 DO NOT CALL THESE FUNCTIONS!!!
 */
+
+function checkEmailAddress(input){
+    var value = document.getElementById(input).value;
+    var pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    return(pattern.test(value));
+}
 
 function isArray(data){
     if(Object.prototype.toString.call( data ) === '[object Array]'){

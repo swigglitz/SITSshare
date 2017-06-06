@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Test Page</title>
-        <link rel="stylesheet" type="text/css" href="css/sits.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/sits.css">-->
         <link rel="stylesheet" type="text/css" href="css/sv.css">
         <link rel="stylesheet" type="text/css" href="css/wlv.css">
         <link rel="stylesheet" type="text/css" href="plugins/css/ui/sits-ui.css">
@@ -117,7 +117,7 @@
                 <h2>Forms</h2>
                 <div class="sv-row">
                     <div class="sv-col-md-6">
-                        <div class="sv-form">
+                        <div class="sv-form-container">
                             <h3>Vertical Forms</h3>
                             <div class="sv-form-group">
                                 <label class="sv-control-label">Text</label>
@@ -158,53 +158,55 @@
                         </div>
                     </div>
                     <div class="sv-col-md-6">
-                        <div class="sv-form-horizontal">
-                            <h3 style="margin-bottom: 30px;">Horizontal Forms</h3>
-                            <div class="sv-control-group">
-                                <label class="sv-control-label sv-col-md-4">Text :</label>
-                                <div class="sv-col-md-8">
-                                    <input class="sv-form-control" type="text">
+                        <div class="sv-form-container">
+                            <div class="sv-form-horizontal">
+                                <h3 style="margin-bottom: 30px;">Horizontal Forms</h3>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">Text :</label>
+                                    <div class="sv-col-md-8">
+                                        <input class="sv-form-control" type="text">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sv-control-group">
-                                <label class="sv-control-label sv-col-md-4">Password :</label>
-                                <div class="sv-col-md-8">
-                                    <input class="sv-form-control" type="password">
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">Password :</label>
+                                    <div class="sv-col-md-8">
+                                        <input class="sv-form-control" type="password">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sv-control-group">
-                                <label class="sv-control-label sv-col-md-4">Select :</label>
-                                <div class="sv-col-md-8">
-                                    <select class="sv-form-control">
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">Four</option>
-                                    </select>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">Select :</label>
+                                    <div class="sv-col-md-8">
+                                        <select class="sv-form-control">
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            <option value="4">Four</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sv-control-group">
-                                <label class="sv-control-label sv-col-md-4">Multi-Select :</label>
-                                <div class="sv-col-md-8">
-                                    <select multiple class="sv-form-control">
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">Four</option>
-                                    </select>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">Multi-Select :</label>
+                                    <div class="sv-col-md-8">
+                                        <select multiple class="sv-form-control">
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            <option value="4">Four</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sv-form-group">
-                                <label class="sv-control-label sv-col-md-4">Textarea :</label>
-                                <div class="sv-col-md-8">
-                                    <textarea class="sv-form-control" rows="5" placeholder="text area">
-                                    </textarea>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">Textarea :</label>
+                                    <div class="sv-col-md-8">
+                                        <textarea class="sv-form-control" rows="5" placeholder="text area">
+                                        </textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sv-form-group">
-                                <label class="sv-control-label sv-col-md-4">File Input :</label>                               
-                                <input type="file" class="sv-form-control-file">
-                                <small>Some help content for the file interaction</small>
+                                <div class="sv-form-group">
+                                    <label class="sv-control-label sv-col-md-4">File Input :</label>                               
+                                    <input type="file" class="sv-form-control-file">
+                                    <small>Some help content for the file interaction</small>
+                                </div>
                             </div>
                         </div>                        
                     </div>

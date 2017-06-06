@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Email</title>
+        <style type="text/css">
+        body {margin: 0; padding: 0; min-width: 100%!important;}
+        .content {width: 100%; max-width: 600px;}  
+        </style>
+    </head>
+    <body>
+        <style type="text/css">
+            body {
+                font-family: "Helvetica"
+                font-size 12px;
+            }
+            .footercopy {
+                font-size: 10px;
+            }
+            .footercopy a {
+                text-decoration: underline;
+            }
+        </style>
+        <table border="0" cellpadding="0" cellspacing="0" width="725" align="center">
+            <tr>
+                <td>
+                    <table width="200" align="left" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img src="https://smsweb.wlv.ac.uk/urd/sits.urd/w_files/email/header.png" width="225" height="50" style="background-color: ffffff;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <br>
+            <tr style="padding: 10px;">
+    <td>
+        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td>
+<p><<GSL_GEND.GSL&DD2 M9 Y>></p>
+
+<<STU_TITL.STU&W>> <<STU_NAME.STU&W&A>><br>
+<<STU_HAD1.STU&W&A>><br>
+<<STU_HAD2.STU&W&A>><br>
+<<STU_HAD3.STU&W&A>><br>
+<<STU_HAD4.STU&W&A>><br>
+<<STU_HAD5.STU&W&A>><br>
+<<STU_HAPC.STU&A>>
+
+<p>Student Number:  <<CAP_STUC.CAP>></p>
+
+<p>Dear <<STU_TITL.STU&W>> <<STU_SURN.STU&W>></p>
+                </td> <!-- END OF ADDRESSEE DETAILS -->
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr style="padding: 1px;">
+    <td>
+        <table width="98%" align="left" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td><p>Thank you for applying to study at the University of Wolverhampton. This letter confirms your {{SEL:"<<CAP_IDRC.CAP>>"="C":conditional}{unconditional}} acceptance on the following course: </p>
+
+Course Title:  <<CAP_MCRC.CAP&Gmcr_titl.mcr.srs>><br>
+Point of Entry:  Year <<CAP_BLOK.CAP&F[1,1]>><br>
+Duration:  <<@CAP/CRS_YLEN>><br>   
+Start Date: <<CBO_BEGD.CBO&DD9 D2 M9 Y>> <br>
+Place of Study:  <<CBO_LCAC.CBO&Glca_name.lca.mensys>> <br>     
+{{SEL:"<<CAP_IDRC.CAP>>"="C·*":<p>Conditions of Offer:
+
+<<CAPN_OFFN.CAPN>></p>}}
+
+{{SEL:"<<CAP_IDRC.CAPC>>"="C·*":<p>When all conditions stipulated above have been met, an unconditional offer will be issued to you.</p>}}  
+
+<p>Please log onto e:Vision at www.wlv.ac.uk/eVision {{SEL:CAP_AESC.CAP="D"&CAP_QSTC.CAP="MV":to check the progress of your application}{in order to complete your enrolment}} using the details sent in your welcome email.</p>{{SEL:( CAP_CRSC.CAP = "BU008P38CG" ):<p>Please note that as part of the enrolment process, you will be requested to confirm that you are aware that the award Master of Business Administration (MBA) at Cornerstone School of International Studies will not be recognised by the UAE Ministry and will have Cornerstone referred to on the transcript.</p>}}
+
+<p>Please refer to the college that you will study at regarding the standard tuition fee for the above course. Standard tuition fees are likely to increase for subsequent years. </p>
+
+<p>Further information for international students studying our courses in their own country, together with details of all University resources, can be found at http://www.wlv.ac.uk/international. </p>
+
+<p>Meanwhile, if we can be of any further assistance, please do not hesitate to contact us.</p>
+
+Yours sincerely,<br>
+<br>
+<<USR_NAME.USR>><br>
+<<PRS_USRC=<USR_CODE>&GPRS_JOBT.PRS.MENSYS&W>><br>
+Student Transnational and Research Office<br>
+<p><a href:"mailto:internationaltne@wlv.ac.uk?subject=offer letter reply <<cap_stuc.cap>>">internationaltne@wlv.ac.uk</a></p>
+                </td> <!-- END OF EMAIL CONTENT -->
+            </tr>
+        </table>
+    </td>
+</tr>
+<br>
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <br>
+                                <hr>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="footercopy">
+                                <p><strong>Registry</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="footercopy" width="600">
+                                <p>University of Wolverhampton Registry MX Building Camp Street City Campus Molineux Wolverhampton WV1 1AD United Kingdom T: +44 01902 321000</p>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td align="center">                                
+                                <img src="https://smsweb.wlv.ac.uk/urd/sits.urd/w_files/email/footer.png" width="725" height="50">                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
